@@ -1,0 +1,8 @@
+{
+  "name": "Usina Play",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "3d8690cb"
+}
