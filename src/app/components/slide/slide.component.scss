@@ -122,7 +122,8 @@ ion-content {
             border: 1px solid $color-light;
             display: flex;
             align-items: center;
-            padding: 2rem;
+            padding-left: 2rem;
+
           }
 
           .square {
@@ -131,7 +132,6 @@ ion-content {
             max-height: 100%;
             border-radius: 1rem !important;
             background-color: $color-ambar;
-            margin-bottom: 3rem;
           }
         }
       }

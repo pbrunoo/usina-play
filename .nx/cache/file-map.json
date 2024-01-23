@@ -136,11 +136,11 @@
       },
       {
         "file": "src/app/components/slide/slide.component.html",
-        "hash": "6611234154611838016"
+        "hash": "1545551212624069205"
       },
       {
         "file": "src/app/components/slide/slide.component.scss",
-        "hash": "13433095965115850019"
+        "hash": "14593576757362038294"
       },
       {
         "file": "src/app/components/slide/slide.component.spec.ts",
@@ -160,11 +160,11 @@
       },
       {
         "file": "src/app/pages/home/home.page.html",
-        "hash": "5537411532689390722"
+        "hash": "740047915147521093"
       },
       {
         "file": "src/app/pages/home/home.page.scss",
-        "hash": "11246177461968059110"
+        "hash": "7404877089157777305"
       },
       {
         "file": "src/app/pages/home/home.page.spec.ts",
@@ -172,7 +172,7 @@
       },
       {
         "file": "src/app/pages/home/home.page.ts",
-        "hash": "15440281749371815670"
+        "hash": "3036364511542942104"
       },
       {
         "file": "src/assets/fonts/BarlowCondensed-Black.ttf",
@@ -252,7 +252,7 @@
       },
       {
         "file": "src/assets/scss/config.scss",
-        "hash": "17390307305231864393"
+        "hash": "14074994387553987046"
       },
       {
         "file": "src/assets/scss/index.scss",
