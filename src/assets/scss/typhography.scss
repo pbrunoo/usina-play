@@ -1,0 +1,41 @@
+@import './config.scss';
+@mixin base-heading($size, $color) {
+    font-size: $size;
+    font-family: $font-family-base;
+    font-weight: 700;
+    color: $color;
+    margin: 0 0 $spacing-stack-xxs 0;
+}
+
+.heading-lg {
+    @include base-heading($font-size-lg, $color-dark);
+}
+
+.heading-md {
+    @include base-heading($font-size-md, $color-default);
+}
+
+.heading-sm {
+    @include base-heading($font-size-sm, $color-dark);
+}
+
+.heading-xs {
+    @include base-heading($font-size-xs, $color-dark);
+}
+
+.subtitle {
+    font-size: $font-size-md;
+    font-family: $font-family-base;
+    font-weight: 500;
+    color: $color-medium;
+    margin: 0 0 $spacing-stack-xs 0;
+}
+
+.paragraph {
+    font-family: $font-family-base;
+    font-weight: 300;
+    font-size: $font-size-xs;
+    color: $color-dark;
+    margin: 0 0 $spacing-stack-md 0;
+    line-height: $font-line-height-xs;
+}

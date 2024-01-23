@@ -1,0 +1,27 @@
+<ion-content scroll-y="false">
+  <ion-grid *ngFor="let item of content">
+    <ion-row>
+      <h1>{{ item.title }}</h1>
+      <ion-badge *ngIf="item.new_function && item.title !== 'CONTEÚDOS'">NOVO</ion-badge>
+      <button class="button-new" *ngIf="item.title === 'PERSONAL ONLINE'"><ion-icon name="add-circle-outline"></ion-icon></button>
+    </ion-row>
+    <ion-row>
+      <ion-col class="slide-main">
+        <div class="slide-single" *ngFor="let img of item.content">
+          <img *ngIf="item.title !== 'CONTEÚDOS'" [src]="img.img"/>
+          <div *ngIf="item.title !== 'PERSONAL ONLINE' && item.title !== 'PROGRAMAS'" class="conteudos">
+            <div class="square"></div>
+          </div>
+          <div class="action" *ngIf="item.title === 'PERSONAL ONLINE'">
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-label>NOVO TREINO</ion-label>
+          </div>
+          <ion-text *ngIf="item.title !== 'PERSONAL ONLINE' && item.title !== 'CONTEÚDOS'">
+            <sub *ngIf="img.watched">Contiunar treinamento</sub>
+            <h5>{{ img.type_trainer }}</h5>
+          </ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

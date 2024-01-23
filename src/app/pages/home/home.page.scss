@@ -1,0 +1,100 @@
+@import 'src/assets/scss/config.scss';
+
+
+.home-header {
+  background-color: $color-default;
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+  box-shadow: none;
+  border: none;
+
+  ion-toolbar {
+    .menu-button-home {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    ion-title {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+
+      ion-img {
+        width: 6rem;
+      }
+    }
+
+    .notification {
+      color: $color-ambar;
+      font-size: 1rem;
+      border-radius: 50%;
+      background-color: $color-dark;
+      padding: .5rem;
+    }
+
+    .badge_notification {
+      width: .5rem;
+      height: .5rem;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      right: .1rem;
+      top: .1rem;
+      background-color: $color-green-light;
+    }
+  }
+}
+
+ion-content {
+  .content-header {
+    background-color: $color-default;
+    border-bottom-left-radius: 3rem ;
+    border-bottom-right-radius: 3rem;
+  }
+
+  ion-avatar {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: $color-light;
+    font-family: $font-family-secondary-bold;
+  }
+
+  ion-label {
+    font-size: .9rem;
+    color: $color-subtitle;
+    font-family: $font-family-secondary-bold;
+  }
+
+  .button-header {
+    background-color: $color-dark;
+    padding: .3rem .7rem;
+    display: flex;
+    align-items: center;
+    font-family: $font-family-secondary;
+    color: $color-ambar;
+    font-size: .8rem;
+    line-height: normal;
+    border-start-start-radius: 1rem;
+    border-end-start-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    ion-icon {
+      border: 1px solid $color-ambar;
+      font-size: .4rem;
+      padding: .15rem;
+      border-radius: 50%;
+      margin-right: .3rem;
+    }
+  }
+
+  .button-header:last-child {
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
+    border-start-end-radius: 1rem;
+    border-end-end-radius: 1rem;
+  }
+}
